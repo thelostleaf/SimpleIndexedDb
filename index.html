@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="index-db.js"></script>
+    <title>Test</title>
+    <style>
+        #divResults {
+            border: 1px solid gray;
+            background-color: #EEEEEE;
+            margin: 10px;
+            padding: 10px;
+            font-family: Verdana;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick='Database.Add({ dashId: 1, value: "Hello World" }, callback);'>Add</button>
+    <button onclick='Database.Add({ dashId: 1, value: "Hello Worlds" }, callback);'>Overwrite</button>
+    <button onclick='Database.AddTestData(1000, callback);'>Add Test Data</button>
+    <button onclick='Database.Get(1, callback);'>Get</button>
+    <button onclick='Database.GetIndex("Hello World", callback);'>Get Index</button>
+    <button onclick='Database.ReadAll(callback);'>Show All</button>
+    <button onclick='Database.Remove(1, callback);'>Remove</button>
+    <button onclick='Database.RemoveAll(callback);'>Remove All</button>
+    <button onclick='Database.GetSize(callback);'>Size</button>
+    <button onclick='Database.GetCount(callback);'>Count</button>
+    <button onclick='Database.DeleteDatabase(Database.dbName, callback);'>Delete Database</button>
+    <button onclick='divResults.innerHTML = null'>Clear Screen</button>
+    <div id="divResults" class="div-results"></div>
+</body>
+</html>
