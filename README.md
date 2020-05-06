@@ -4,4 +4,4 @@ Here is a simple wrapper you can use for indexeddb feature in javascript for sto
 Include index-db.js file in your html page, use a callback.
 
 Features include: 
-
+Add, AddTestData, Get, GetIndex, GetCount, GetSize, ReadAll, Remove, RemoveAll, DeleteDatabase
